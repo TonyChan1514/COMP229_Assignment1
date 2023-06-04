@@ -4,7 +4,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  width: 1280px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;  
   text-align: center;
@@ -52,7 +52,7 @@ body {
 }
 
 /* Button */
-.button {
+.homeButton {
   background-color: #7658e4;
   border: none;
   color: white;
@@ -73,6 +73,18 @@ body {
   display: inline-block;
   font-size: 18px;
   margin: 40px 40px;
+  cursor: pointer;
+}
+
+.projectButton {
+  background-color: #119605;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+  margin: 20px 5px;
   cursor: pointer;
 }
 
@@ -98,6 +110,24 @@ body {
   width: 250px;
   height: auto;
 }
+
+/* Project Lists */
+.ProjectSummary{
+  width: 1000px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.ProjectImage{
+  order: 0;
+}
+
+.ProjectDescription{
+  order: 1;
+  text-align: left;
+}
+
 
 /* Footer and Copyright */
 footer {
