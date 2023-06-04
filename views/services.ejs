@@ -1,14 +1,58 @@
 <%- include('partials/header') %>
 
 <body>
-  <%- include('partials/navbar') %>
+    <%- include('partials/navbar') %>
 
-  <h1>My Services</h1>
+    <h1>My Services</h1>
 
-  <ul>
-    <li>Programming</li>
-    <li>Web Design</li>
-    <li>Data Analysis</li>
-  </ul>
+    <br>
+        
+    <div class="ServiceSummary">
+        <div class="ServiceImage">
+            <img src="/images/ServiceImage1.png" width="400" alt="Project Image 1">
+        </div>
+        <div class="ServiceDescription">
+            <h3>General Programming Service</h3>
+            <p>
+                Perform programming or application development according to client's requirement.
+            </p>
+            <p>
+                Programming Languages Offered: Java, C#, COBOL, Javascript, Pyton
+                Scripting Language: Bash Script, Window Script, JCL
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="ServiceSummary">
+        <div class="ServiceImage">
+            <img src="/images/ServiceImage2.png" width="400" alt="Project Image 2">
+        </div>
+        <div class="ServiceDescription">
+            <h3>Database Design and Tuning Service</h3>
+            <p>
+                Design database schema and records by considering the need of business operation and performance. Especially perform optimization for bulk records handling.
+            </p>
+            <p>
+                Database Platform Offered: Microsoft SQL Server, Oracle, DB2
+            </p>
+        </div>
+    </div>
+    <br>
+    <div class="ServiceSummary">
+        <div class="ServiceImage">
+            <img src="images/ServiceImage3.png" width="400" alt="Project Image 3">
+        </div>
+        <div class="ServiceDescription">
+            <h3>Webpage Design Service</h3>
+            <p>
+                Want to build a webpage to promote your business?<br>
+                No problem. I can do it.
+            </p>
+            <p>
+                Skills Involved: HTML, CSS, Javascript, Node JS, MongoDB
+            </p>
+        </div>
+    </div>
+    <br>
 
 <%- include('partials/footer') %>

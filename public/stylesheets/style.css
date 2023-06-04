@@ -27,7 +27,7 @@ body {
 .navbar a {
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 40px;
   text-decoration: none;
   font-size: 20px;
 }
@@ -124,6 +124,23 @@ body {
 }
 
 .ProjectDescription{
+  order: 1;
+  text-align: left;
+}
+
+/* Service Lists */
+.ServiceSummary{
+  width: 1000px;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.ServiceImage{
+  order: 0;
+}
+
+.ServiceDescription{
   order: 1;
   text-align: left;
 }
