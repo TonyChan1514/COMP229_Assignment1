@@ -1,28 +1,78 @@
 <%- include('partials/header') %>
 
 <body>
-  <h1>Contact</h1>
-
   <%- include('partials/navbar') %>
 
-  <p>Contact information goes here.</p>
-  <form action="/" method="post">
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required>
+  <h1>Contact Me</h1>
 
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName" required>
-
-    <label for="contactNumber">Contact Number:</label>
-    <input type="tel" id="contactNumber" name="contactNumber" required>
-
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <input type="submit" value="Submit">
+  <p>Please fill in the form to indicate your interested property with your personal information. I will get back you as soon as possible</p>   
+  <form action="mailto:wahid.atiq@century21.ca" method="POST">
+      <fieldset>
+          <p>
+              <label for="firstName">First Name: </label>
+              <input id="firstName" name="firstName" size="30" type="text" required="required" tabindex="1">
+          </p>
+          <p>
+              <label for="lastName">Last Name: </label>
+              <input id="lastName" name="lastName" size="30" type="text" required="required" tabindex="3">
+          </p>
+          <p>
+              <label for="phone">Phone: </label>
+              <input id="phone" name="phone" size="30" type="tel" required="required" placeholder="647-383-6573" tabindex="5">
+          </p>
+          <p>
+              <label for="email">Email: </label>
+              <input id="email" name="email" size="40" type="email" required="required" tabindex="7">
+          </p>
+          <p>
+              <label for="propertyType">Type of Property</label>
+              <input id="propertyType" name="propertyType" type="radio" value="house" tabindex="9">House&nbsp;
+              <input name="propertyType" type="radio" value="condo">Condominium
+          </p>
+          <p>
+              <label for="numOfBedrooms">Number of Bedrooms:</label>
+              <select name="numOfBedrooms" id="numOfBedrooms" tabindex="11">
+                  <option value="">-- Select --</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+              </select>
+          </p>
+          <p>
+              <label for="numOfBathrooms">Number of Bathrooms:</label>
+              <select name="numOfBathrooms" id="numOfBathrooms" tabindex="13">
+                  <option value="">-- Select --</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+              </select>
+          </p>
+          <p>
+              <label>Price Range: </label>
+              From <input id="PriceRangeMin" name="PriceRangeMin" size="12" type="text" required="required" tabindex="15"> To
+              <input id="PriceRangeMax" name="PriceRangeMax" size="12" type="text" required="required" tabindex="17">
+          </p>
+          <p>
+              <label for="comments">Additional Comments:</label>
+              <textarea id="comments" name="comments" cols="40" rows="4" tabindex="19"></textarea>
+          </p>
+      </fieldset>
+      <p>
+          <input name="submitButton" type="submit" value="Submit" tabindex="31">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input name="resetButton" type="reset" value="Clear" tabindex="33">
+      </p>
   </form>
 
 <%- include('partials/footer') %>
