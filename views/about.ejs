@@ -1,12 +1,35 @@
 <%- include('partials/header') %>
 
 <body>
-  <%- include('partials/navbar') %>
+    <%- include('partials/navbar') %>
 
-  <h1>About Me</h1>
-  <h2>Legal Name: Your Name</h2>
-  <img src="/images/profile.jpg" alt="Profile Image">
-  <p>Insert a short paragraph about yourself.</p>
-  <a href="/resume.pdf">Download Resume (PDF)</a>
-</body>
-</html>
+    <h1 style="text-align:center;">About Me</h1>
+
+    <div id="myTitle">
+        <h2>Chi Shing, CHAN (Tony)</h2>
+        <h4>Experienced backend developer on Mainframe and Database</h4>
+    </div>
+    <div id="myProfile">
+        <div id="myPicture">
+            <img id="profile_picture" src="images/MyPicture.png" width="400" alt="MyPicture">
+        </div>
+
+        <div id="myInfo">
+            <h3>Mission Statement</h3>
+            <p>
+                As an experienced application developer, I am happy to leverage my technical skills 
+                to create great software solutions that meet various business requirements and impress users. 
+            </p>
+            <h3>Abou my professions</h3>
+            <p>
+                I am a professional backend developer focus on Mainframe and database development.<br>
+                Specialize on batch Programming (COBOL) and batch jobs dependencies design.<br>
+                For database, I am experienced with data analysis and it's performance tuning.
+            </p>
+        </div>
+    </div>
+
+    <br><br>
+    <a target="_blank" href="/files/Resume - Tony Chan.pdf" class="resumeButton">My Resume (PDF)</a>
+
+<%- include('partials/footer') %>

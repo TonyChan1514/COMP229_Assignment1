@@ -1,12 +1,24 @@
 <%- include('partials/header') %>
 
 <body>
-  <h1>Welcome to My Personal Portfolio</h1>
+    <%- include('partials/navbar') %>
 
-  <%- include('partials/navbar') %>
+    <h1 style="text-align:center;">Welcome to Tony Chan's portfolio site</h1>
 
-  <p>Insert your welcome message here.</p>
-  <a href="/about">About Me</a>
-  <a href="/projects">Projects</a>
-</body>
-</html>
+    <p>
+        I am a student in the Software Engineering Technican at Centennial College.
+        Previously, I was a backend developer in Hong Kong.
+    </p>
+
+    <br>
+
+    <h3>My Mission Statement</h3>
+    <p> 
+        As an experienced application developer, I am happy to leverage my technical skills 
+        to create great software solutions that meet various business requirements and impress users. 
+    </p>
+  
+    <a href="/about" class="button">About Me</a>
+    <a href="/projects" class="button">Projects</a>
+
+<%- include('partials/footer') %>
