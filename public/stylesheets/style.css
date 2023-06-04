@@ -1,4 +1,8 @@
-/* style.css */
+/*  Author: Chi Shing Chan
+    Student ID # 301268811
+    Date: 04 Jun, 2023
+    File: style.css
+ */
 
 /* Global Styles */
 
@@ -8,12 +12,6 @@ body {
   margin-right: auto;
   margin-left: auto;  
   text-align: center;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 /* Navigation Bar */
@@ -146,8 +144,9 @@ body {
 }
 
 /* Contact */
-width: 400px;
-float: left;
+label {
+  width: 400px;
+  float: left;
 }
 
 fieldset {
@@ -180,6 +179,11 @@ height: 30px;
 
 }
 
+.ContactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Footer and Copyright */
 footer {

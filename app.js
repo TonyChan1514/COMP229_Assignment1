@@ -1,3 +1,9 @@
+/*  Author: Chi Shing Chan
+    Student ID # 301268811
+    Date: 04 Jun, 2023
+    File: app.js
+ */
+
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -17,7 +23,8 @@ app.use('/', router);
 app.listen(3000, () => {
     console.log('Server started on port 3000');
 });
-  
+
+// Set the static path
 app.use(express.static('public'));
 
 module.exports = app;
