@@ -14,9 +14,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/', router);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+// Start the server
+app.listen(3000, () => {
+    console.log('Server started on port 3000');
 });
+  
+app.use(express.static('public'));
 
 module.exports = app;
